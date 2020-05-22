@@ -85,7 +85,6 @@ void MainWindow::on_button_connect_clicked(bool check ) {
 			ui.button_connect->setEnabled(false);
 			ui.line_edit_master->setReadOnly(true);
 			ui.line_edit_host->setReadOnly(true);
-			ui.line_edit_topic->setReadOnly(true);
 		}
 	}
 }
