@@ -13,6 +13,7 @@
 #include <ros/ros.h>
 #include <ros/network.h>
 #include <string>
+#include <cstdlib>
 #include <std_msgs/String.h>
 #include <geometry_msgs/Vector3.h>
 #include <geometry_msgs/PoseStamped.h>

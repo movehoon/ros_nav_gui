@@ -112,17 +112,17 @@ void MainWindow::on_button_initialPosition_clicked(bool check ) {
 	qnode.initpos(x, y, z, w);
 }
 void MainWindow::on_button_manualInitialPosition_clicked(bool check ) {
-	float x = std::stof(ui.lineEdit_x->text().toStdString());
-	float y = std::stof(ui.lineEdit_y->text().toStdString());
-	float z = std::stof(ui.lineEdit_z->text().toStdString());
-	float w = std::stof(ui.lineEdit_w->text().toStdString());
+	float x = std::atof(ui.lineEdit_x->text().toStdString().c_str());
+	float y = std::atof(ui.lineEdit_y->text().toStdString().c_str());
+	float z = std::atof(ui.lineEdit_z->text().toStdString().c_str());
+	float w = std::atof(ui.lineEdit_w->text().toStdString().c_str());
 	qnode.initpos(x, y, z, w);
 }
 void MainWindow::on_button_manualDestination_clicked(bool check ) {
-	float x = std::stof(ui.lineEdit_x->text().toStdString());
-	float y = std::stof(ui.lineEdit_y->text().toStdString());
-	float z = std::stof(ui.lineEdit_z->text().toStdString());
-	float w = std::stof(ui.lineEdit_w->text().toStdString());
+	float x = std::atof(ui.lineEdit_x->text().toStdString().c_str());
+	float y = std::atof(ui.lineEdit_y->text().toStdString().c_str());
+	float z = std::atof(ui.lineEdit_z->text().toStdString().c_str());
+	float w = std::atof(ui.lineEdit_w->text().toStdString().c_str());
 	qnode.navgoal(x, y, z, w);
 }
 void MainWindow::on_button_destination1_clicked(bool check ) {
